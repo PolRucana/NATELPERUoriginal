@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/*** ZONA CABECERA O BARRA DE LOGO Y MENU *****/
+
+header{
+    /*border: 1px solid red;*/
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 40px;
+    z-index: 100;
+    transition: all 0.5s;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    /*border: 1px solid green;*/
+}
+
+.logo img{
+   width: 45px;
+   margin-right: 7px;
+}
+
+.logo h4{
+    font-size: 16px;
+    color: white;
+    margin-right: 7px;
+    letter-spacing: 1px;
+}
+
+.logo h3{
+    font-size: 15px;
+    
+    background: #F04A4A;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 30px;
+    border-radius: 8px;
+}
+
+nav{
+    /*border: 1px solid red;*/ 
+}
+
+nav ul{
+    /*border: 1px solid black;*/
+    list-style: none;
+}
+
+nav  ul li{
+    /*border:  1px solid blue;*/
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a{
+    /*border: 1px solid purple;*/
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: lighter;
+    transition: all 0.5s;
+}
+
+nav ul li a:hover{
+    background: #F04A4A;
+    transform: scale(1.05);
+    transition: all 0.5s;
+}
+
+.menu{
+    /*border: 1px solid blue;*/
+    display: none;
+}
+
+.menu img{
+    /*border: 1px solid green;*/
+    width: 35px;
+    display: block;
+}
+
+/** ZONA DE CAMBIO DE COLOR DE LA BARRA DE MENU Y LOGO ***/
+
+header.black{
+    background: rgba(0, 0, 0,0.8);
+    padding: 10px 40px;
+    transition: all 0.5s;
+}
+
+/*** ZONA DE FONDO PRINCIPAL *****/
+
+.fondo{
+    width: 100%;
+    height: 100vh;
+    background: url('../img/fondo5.jpeg');
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.fondo h1{
+    /*border: 1px solid black;*/
+    font-size: 50px;
+    color: white;
+    margin-left: 40px;
+
+    background: rgba(90, 167, 232, 0.2);
+    border-radius: 5px;
+    padding: 9px 0px 0px 35px;
+}
+
+
+.fondo a{
+    text-decoration: none;
+    margin-left: 290px;
+    margin-top: 60px;
+    color: white;
+    font-size: 17px;
+    font-weight: lighter;
+    padding: 5px 12px;
+    background: #F04A4A;
+
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+
+
+.fondo a:hover{
+    transform: scale(1.2);   
+}
+
+/***  ZONA NOSOTROS ****/
+
+.contskew{
+    /*border: 1px solid red;*/
+    position: relative;
+    overflow: hidden;
+    height: 120px;
+}
+
+.skew{
+    background: rgb(89, 173, 255);
+    height: 200px;
+    transform: skew(0deg,-5deg) translateY(-140px);
+}
+
+.contskew .titulonosotros, .tituloservicios{
+    position: absolute;
+    top: 35px;
+    left: 40px;
+}
+
+.titulonosotros , .tituloservicios{
+    /*border: 1px solid red;*/
+    display: flex;
+    align-items: center;
+}
+
+.titulonosotros img , .tituloservicios img{
+
+}
+
+.titulonosotros h2 , .tituloservicios h2{
+    color: white;
+    margin-left: 20px;
+    font-size: 32px;
+}
+
+.contnosotros{
+    /*border: 1px solid red;*/
+    display: flex;
+}
+
+.conceptoymivi{
+    /*border: 1px solid blue;*/
+    width: 100%;
+}
+
+.concepto{
+    /*border: 1px solid purple;*/
+}
+.concepto h3{
+    /*border: 1px solid olive;*/
+    width: 530px;
+    text-align: justify;
+    margin: auto;
+    padding: 30px 0px;
+
+    font-weight: lighter;
+}
+
+.misionyvision{
+    /*border: 1px solid orange;*/
+    display: flex;
+    padding: 20px 30px;
+}
+
+.mision{
+    /*border: 1px solid green;*/
+    width: 100%;
+    padding-left: 90px;
+}
+.mision h2{
+    /*border: 1px solid red;*/
+    font-size: 20px;
+    margin: auto;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+    background: #F04A4A;
+    color: white;
+    
+}
+.mision h3{
+    /*border: 1px solid brown;*/
+    text-align: center;
+    font-size: 15px;
+    font-weight: lighter;
+    padding: 20px;
+    margin-top: 5px;
+
+    background: rgba(240, 74, 74, 0.8);
+    color: white;
+}
+
+.vision{
+    /*border: 1px solid black;*/
+    width: 100%;
+    overflow: hidden;
+    padding-right: 90px;
+}
+.vision h2{
+    /*border: 1px solid green;*/
+    font-size: 20px;
+    margin: auto;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+    background: rgb(89, 173, 255);
+    color: white;
+}
+.vision h3{
+    /*border: 1px solid fuchsia;*/
+    text-align: center;
+    font-size: 15px;
+    font-weight: lighter;
+    padding: 20px;
+    height: 100%;
+    margin-top: 5px;
+
+    background: rgba(89, 173, 255, 0.8);
+    color: white;
+}
+
+.imagennosotros{
+    /*border: 1px solid green;*/
+    width: 60%;
+    text-align: center;
+}
+
+.imagennosotros img{
+    width: 250px;
+}
+
+/***** ZONA DE SERVICIOS *******/
+.servicios{
+    margin-top: 100px;
+}
+
+.zonaservicios{
+    /*border: 1px solid red;*/
+    padding: 20px 94px; /*Este padding la cambiaremos en el responsive*/
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tiposservicios{
+    /*border: 1px solid purple;*/
+    position: relative;
+    width: 280px;
+    max-width: 100%;
+    height: 230px;
+    margin: 20px;
+    background: #F6F6F6;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tiposservicios img{
+   /*border: 1px solid black;*/
+   position: absolute;
+   top: -20px;
+   transition: all 0.5s; 
+}
+
+.tiposservicios h3{
+    /*border: 1px solid red;*/
+    width: 210px;
+    text-align: center;
+    font-weight: lighter;
+    transition: all 0.5s;
+}
+
+.texto{
+    /*border: 1px solid red;*/
+    background: #F04A4A;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0px 20px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.texto h4{
+    /*border: 1px solid green;*/
+    color: white;
+    text-align: center;
+}
+
+.tiposservicios:hover h3, .tiposservicios:hover img {
+    opacity: 0;
+    transition: all 0.5s;
+}
+.tiposservicios:hover .texto{
+    opacity: 1;
+    border-radius: 100%;
+    transition: all 1s;
+}
+
+/******** ZONA CLIENTES ************/
+
+.slider{
+    border: 1px solid red;
+    width: 90%;
+    padding: 10px;
+    margin: auto;
+}
+
+.slider div{
+    border: 1px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider img{
+    border: 1px solid yellow;
+    margin: auto;
+    max-width: 200px;
+    width: 100%;
+}
+
+
+
