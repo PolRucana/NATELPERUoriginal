@@ -125,12 +125,14 @@ header.black{
 .fondo h1{
     /*border: 1px solid black;*/
     font-size: 50px;
+    text-align: center;
+    /*font-weight: lighter;*/
     color: white;
     margin-left: 40px;
 
-    background: rgba(90, 167, 232, 0.2);
-    border-radius: 5px;
-    padding: 9px 0px 0px 35px;
+    /*background: rgba(90, 167, 232, 0.2);*/
+    /*border-radius: 5px;*/
+    /*padding: 9px 0px 0px 35px;*/
 }
 
 
@@ -170,23 +172,23 @@ header.black{
     transform: skew(0deg,-5deg) translateY(-140px);
 }
 
-.contskew .titulonosotros, .tituloservicios{
+.contskew .titulonosotros, .tituloservicios, .tituloclientes{
     position: absolute;
     top: 35px;
     left: 40px;
 }
 
-.titulonosotros , .tituloservicios{
+.titulonosotros , .tituloservicios, .tituloclientes{
     /*border: 1px solid red;*/
     display: flex;
     align-items: center;
 }
 
-.titulonosotros img , .tituloservicios img{
+.titulonosotros img , .tituloservicios img, .tituloclientes img{
 
 }
 
-.titulonosotros h2 , .tituloservicios h2{
+.titulonosotros h2 , .tituloservicios h2, .tituloclientes h2{
     color: white;
     margin-left: 20px;
     font-size: 32px;
@@ -207,7 +209,8 @@ header.black{
 }
 .concepto h3{
     /*border: 1px solid olive;*/
-    width: 530px;
+    max-width: 530px;
+    width: 100%;
     text-align: justify;
     margin: auto;
     padding: 30px 0px;
@@ -303,7 +306,7 @@ header.black{
 
 .zonaservicios{
     /*border: 1px solid red;*/
-    padding: 20px 94px; /*Este padding la cambiaremos en el responsive*/
+    padding: 20px 35px; /*Este padding la cambiaremos en el responsive*/
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -405,6 +408,12 @@ header.black{
 @media screen and (max-width: 1050px){
     
     /*ZONA DEL MENU*/
+
+    .logo h4{
+        background: #003B77;
+        padding: 5px;
+        border-radius: 5px;
+    }
     nav{
         position: absolute;
         width: 100%;
@@ -442,9 +451,101 @@ header.black{
     .fondo h1{
         margin-left: 0px;
         font-size: 35px;
+        background: rgba(90, 167, 232, 0.8);
+        padding: 10px;
+        border-radius: 5px;
     }
 
     .fondo a{
         margin-left: 0px;
     }
+
+    /****** ZONA NOSOTROS ********/
+
+    .contskew .titulonosotros, .tituloservicios, .tituloclientes{
+        top: 20px;
+    }
+
+    .titulonosotros img , .tituloservicios img, .tituloclientes img{
+        width: 50px;
+    }
+    
+    .titulonosotros h2 , .tituloservicios h2, .tituloclientes h2{
+        font-size: 25px;
+    }
+
+    .mision{
+        padding-left: 20px;
+    }
+
+    .vision{
+        padding-right: 20px;
+    }
+
+    .imagennosotros{
+        width: 40%;
+    }
+
+    .imagennosotros img{
+        width: 210px;
+    }
+
+    /***** ZONA SERVICIOS *******/
+    .zonaservicios{
+        padding: 20px 0px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .logo h4{
+        /*background: pink;*/
+    }
+
+    /***** ZONA NOSOTROS *****/
+    
+    .contnosotros{
+        flex-wrap: wrap;
+    }
+
+    .imagennosotros img{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 650px){
+    .logo h4{
+        /*background: green;*/
+    }
+
+    /***** ZONA NOSOTROS *****/
+
+    .titulonosotros img , .tituloservicios img, .tituloclientes img{
+        width: 40px;
+    }
+    
+    .titulonosotros h2 , .tituloservicios h2, .tituloclientes h2{
+        font-size: 20px;
+    }
+
+    .concepto h3{
+        font-size: 17px;
+        padding: 30px 20px;
+    }
+
+    .misionyvision{
+        flex-wrap: wrap;
+    }
+
+    .mision{
+        padding-left: 0px;
+    }
+
+    .vision{
+        padding-right: 0px;
+        margin-top: 10px;
+    }
+
+    /****** ZONA SERVICIOS *******/
+    
 }
