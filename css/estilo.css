@@ -122,6 +122,15 @@ header.black{
     align-items: flex-start;
 }
 
+.fondo::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: black;    
+    opacity: .3;
+}
+
 .fondo h1{
     /*border: 1px solid black;*/
     font-size: 50px;
@@ -129,7 +138,7 @@ header.black{
     /*font-weight: lighter;*/
     color: white;
     margin-left: 40px;
-
+    z-index: 1;
     /*background: rgba(90, 167, 232, 0.2);*/
     /*border-radius: 5px;*/
     /*padding: 9px 0px 0px 35px;*/
@@ -149,6 +158,7 @@ header.black{
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.5s;
+    z-index: 1;
 }
 
 
@@ -167,18 +177,19 @@ header.black{
 }
 
 .skew{
-    background: rgb(89, 173, 255);
+    /*background: rgb(89, 173, 255);*/
+    background: rgba(0, 59, 119, .7);
     height: 200px;
     transform: skew(0deg,-5deg) translateY(-140px);
 }
 
-.contskew .titulonosotros, .tituloservicios, .tituloclientes{
+.contskew .titulonosotros, .tituloservicios, .tituloclientes, .titulotrabajos{
     position: absolute;
     top: 35px;
     left: 40px;
 }
 
-.titulonosotros , .tituloservicios, .tituloclientes{
+.titulonosotros , .tituloservicios, .tituloclientes, .titulotrabajos{
     /*border: 1px solid red;*/
     display: flex;
     align-items: center;
@@ -188,10 +199,11 @@ header.black{
 
 }
 
-.titulonosotros h2 , .tituloservicios h2, .tituloclientes h2{
+.titulonosotros h2 , .tituloservicios h2, .tituloclientes h2, .titulotrabajos h2{
     color: white;
     margin-left: 20px;
     font-size: 32px;
+    font-weight: lighter;
 }
 
 .contnosotros{
@@ -273,7 +285,7 @@ header.black{
     align-items: center;
     border-radius: 50%;
 
-    background: rgb(89, 173, 255);
+    background: #003B77;
     color: white;
 }
 .vision h3{
@@ -285,7 +297,7 @@ header.black{
     height: 100%;
     margin-top: 5px;
 
-    background: rgba(89, 173, 255, 0.8);
+    background: rgba(0, 59, 119, .7);
     color: white;
 }
 
@@ -375,18 +387,18 @@ header.black{
 
 /******** ZONA CLIENTES ************/
 
-.slider{
+.sliderclientes{
     /*border: 1px solid red;*/
     width: 90%;
     margin: auto;
 }
 
-.slider .principalslick{
+.sliderclientes .principalslick{
     /*border: 1px solid blue;*/
     padding: 10px 20px;
 }
 
-.slider .secundarioslick{
+.sliderclientes .secundarioslick{
     /*border: 1px solid green;*/
     height: 300px;
     display: flex;
@@ -396,11 +408,46 @@ header.black{
     background: rgb(231, 94, 94);
 }
 
-.slider h3{
+.sliderclientes h3{
     text-align: center;
     color: white;
     font-size: 17px;
     font-weight: lighter;
+}
+
+/********* ZONA DE TRABAJOS ******/
+
+.trabajos{
+    margin-top: 60px;
+}
+
+.slidertrabajos{
+    /*border: 1px solid red;*/
+    width: 90%;
+    margin: auto;
+}
+
+.slidertrabajos .principalslick2{
+    /*border: 1px solid blue;*/
+    padding: 10px 20px;
+}
+
+.slidertrabajos .secundarioslick2{
+    /*border: 1px solid green;*/
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background: rgba(89, 173, 255, 0.8);
+}
+
+.slidertrabajos h3{
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    font-weight: lighter;
+    margin-bottom: 10px;
 }
 
 /**ESTE ES EL LADO RESPONSIVE***/
@@ -418,7 +465,7 @@ header.black{
         position: absolute;
         width: 100%;
         height: 100vh;
-        top: -700px;
+        top: -100vh;
         left: 0;
 
         background: rgba(235, 94, 94, .9);
@@ -451,7 +498,7 @@ header.black{
     .fondo h1{
         margin-left: 0px;
         font-size: 35px;
-        background: rgba(90, 167, 232, 0.8);
+        background: rgba(0, 0, 0, 0.7);
         padding: 10px;
         border-radius: 5px;
     }
@@ -462,15 +509,15 @@ header.black{
 
     /****** ZONA NOSOTROS ********/
 
-    .contskew .titulonosotros, .tituloservicios, .tituloclientes{
+    .contskew .titulonosotros, .tituloservicios, .tituloclientes, .titulotrabajos{
         top: 20px;
     }
 
-    .titulonosotros img , .tituloservicios img, .tituloclientes img{
+    .titulonosotros img , .tituloservicios img, .tituloclientes img, .titulotrabajos img{
         width: 50px;
     }
     
-    .titulonosotros h2 , .tituloservicios h2, .tituloclientes h2{
+    .titulonosotros h2 , .tituloservicios h2, .tituloclientes h2, .titulotrabajos h2{
         font-size: 25px;
     }
 
@@ -517,14 +564,21 @@ header.black{
     .logo h4{
         /*background: green;*/
     }
+    
+    /**** ZONA FONDO PRINCIPAL*****/
+
+    .fondo h1{
+        font-size: 25px;
+        padding: 12px;
+    }
 
     /***** ZONA NOSOTROS *****/
 
-    .titulonosotros img , .tituloservicios img, .tituloclientes img{
+    .titulonosotros img , .tituloservicios img, .tituloclientes img, .titulotrabajos img{
         width: 40px;
     }
     
-    .titulonosotros h2 , .tituloservicios h2, .tituloclientes h2{
+    .titulonosotros h2 , .tituloservicios h2, .tituloclientes h2, .titulotrabajos h2{
         font-size: 20px;
     }
 

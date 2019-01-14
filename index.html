@@ -155,7 +155,7 @@
             <div class="tituloclientes"><img src="png/004-rate.png" alt=""><h2>Clientes</h2></div>
         </div>
 
-        <div class="responsive slider">
+        <div class="responsive sliderclientes">
             <div class="principalslick"><div class="secundarioslick"><h3>Municipalidad Provincial <br>de Sanchez Carrion</h3></div></div>
             <div class="principalslick"><div class="secundarioslick"><h3>Municipalidad Distrital <br>de Chugay</h3></div></div>
             <div class="principalslick"><div class="secundarioslick"><h3>Municipalidad Distrital <br>de Sanagoran</h3></div></div>
@@ -169,6 +169,26 @@
             <div class="principalslick"><div class="secundarioslick"><h3>Minera Alicel <br>en Pataz</h3></div></div>        
         </div>
     </section>
+
+    <section class="trabajos">
+        <div class="contskew">
+            <div class="skew"></div>
+            <div class="titulotrabajos"><img src="png/005-effort.png" alt=""><h2>Trabajos</h2></div>
+        </div>
+        <div class="responsive slidertrabajos">
+                <div class="principalslick2"><div class="secundarioslick2"><h3>Municipalidad Provincial <br>de Sanchez Carrion</h3></div></div>
+                <div class="principalslick2"><div class="secundarioslick2"><h3>Municipalidad Distrital <br>de Chugay</h3></div></div>
+                <div class="principalslick2"><div class="secundarioslick2"><h3>Municipalidad Distrital <br>de Sanagoran</h3></div></div>
+                <div class="principalslick2"><div class="secundarioslick2"><h3>Municipalidad Distrital <br>de Sarin</h3></div></div>
+                <div class="principalslick2"><div class="secundarioslick2"><h3>Hospital Leoncio <br>Prado</h3></div></div>
+                <div class="principalslick2"><div class="secundarioslick2"><h3>Municipalidad Distrital <br>de Pataz</h3></div></div>
+                <div class="principalslick2"><div class="secundarioslick2"><h3>Municipalidad Distrital <br>de Buldibuyo</h3></div></div>
+                <div class="principalslick2"><div class="secundarioslick2"><h3>Minera Sara Briceño <br>en Pataz</h3></div></div>
+                <div class="principalslick2"><div class="secundarioslick2"><h3>Minera MiGaby <br>en Pataz</h3></div></div>
+                <div class="principalslick2"><div class="secundarioslick2"><h3>Minera Celal <br>en Pataz</h3></div></div>
+                <div class="principalslick2"><div class="secundarioslick2"><h3>Minera Alicel <br>en Pataz</h3></div></div>        
+            </div>
+    </section>
     <footer>
 
     </footer>
@@ -180,7 +200,7 @@
 
         $(document).on('ready', function() {
    
-            $('.responsive').slick({
+            $('.responsive' && '.sliderclientes').slick({
                 autoplay: true,
                 autoplaySpeed: 2000,
                 dots: true,
@@ -202,6 +222,44 @@
                     breakpoint: 600,
                     settings: {
                         slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                    },
+                    {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                    }
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                ]
+                });
+
+                $('.responsive' && '.slidertrabajos').slick({
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                responsive: [
+                    {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                    },
+                    {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
                         slidesToScroll: 2
                     }
                     },
