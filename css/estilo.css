@@ -135,7 +135,7 @@ header.black{
     /*border: 1px solid black;*/
     font-size: 50px;
     text-align: center;
-    /*font-weight: lighter;*/
+    font-weight: lighter;
     color: white;
     margin-left: 40px;
     z-index: 1;
@@ -183,13 +183,13 @@ header.black{
     transform: skew(0deg,-5deg) translateY(-140px);
 }
 
-.contskew .titulonosotros, .tituloservicios, .tituloclientes, .titulotrabajos{
+.contskew .titulonosotros, .tituloservicios, .tituloclientes, .titulotrabajos, .titulocontactanos{
     position: absolute;
-    top: 35px;
+    top: 25px;
     left: 40px;
 }
 
-.titulonosotros , .tituloservicios, .tituloclientes, .titulotrabajos{
+.titulonosotros , .tituloservicios, .tituloclientes, .titulotrabajos, .titulocontactanos{
     /*border: 1px solid red;*/
     display: flex;
     align-items: center;
@@ -199,7 +199,7 @@ header.black{
 
 }
 
-.titulonosotros h2 , .tituloservicios h2, .tituloclientes h2, .titulotrabajos h2{
+.titulonosotros h2 , .tituloservicios h2, .tituloclientes h2, .titulotrabajos h2, .titulocontactanos h2{
     color: white;
     margin-left: 20px;
     font-size: 32px;
@@ -450,6 +450,149 @@ header.black{
     margin-bottom: 10px;
 }
 
+/******** ZONA CONTACTANOS ***********/
+
+.contactanos{
+    margin-top: 100px;
+}
+
+.formularioyubicanos{
+    /*border: 1px solid red;*/
+    display: flex;
+    margin-top: 30px;
+}
+
+.formulario{
+    /*border: 1px solid green;*/
+    width: 100%;
+    padding: 0px 30px;
+}
+
+.formulario h2{
+    text-align: center;
+    color: #F04A4A;
+    border: 2px dotted #F04A4A;
+    padding: 10px 0px;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+form{
+    /*border: 1px solid blue;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+form h3{
+    margin-bottom: 11px;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.caja100{
+    /*border: 2px solid peru;*/
+    width: 100%;
+}
+.caja50{
+    /*border: 2px solid red;*/
+    width: 48%;
+}
+.caja50, .caja100{
+    margin-bottom: 20px;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid rgb(178, 195, 240);
+}
+textarea:focus{
+    outline: none;
+}
+input:focus{
+     outline: none;
+     border: 1px solid white;
+     border-bottom: 1px solid #F04A4A;
+     border-radius: 0px;
+ }
+
+form button{
+    font-size: 16px;
+    padding: 8px 20px;
+    margin: auto;
+    border: none;
+    background: #F04A4A;
+    color: white;
+}
+
+.ubicanos{
+    width: 100%;
+    /*padding-right: 30px;*/
+}
+
+.fondoubicanos{
+    /*border: 1px solid purple;*/
+    height: 100%;
+    background: url('../img/fondocontactanos3.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.fondoubicanos h3{
+    /*color: white;*/
+    font-size: 18px;
+    font-weight: lighter;
+    margin: 50px 0px;
+}
+.redessociales{
+    /*border: 1px solid red;*/
+    background: rgba(238, 235, 235, .8);
+    border-radius: 5px;
+}
+.redessociales img{
+    /*border: 1px solid yellow;*/
+    width: 36px;
+    margin: 15px 34px;
+}
+
+.locaciones{
+    /*border: 1px solid brown;*/
+    background: rgba(238, 235, 235, .8);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.locaciones ul{
+    /*border: 1px solid red;*/
+}
+
+.locaciones ul li{
+    /*border: 1px solid yellow;*/
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.locaciones ul li img{
+    width: 20px;
+    margin-right: 10px;
+}
+
+.locaciones ul li p{
+    font-size: 14px;
+}
+
+
 /**ESTE ES EL LADO RESPONSIVE***/
 
 @media screen and (max-width: 1050px){
@@ -509,15 +652,15 @@ header.black{
 
     /****** ZONA NOSOTROS ********/
 
-    .contskew .titulonosotros, .tituloservicios, .tituloclientes, .titulotrabajos{
+    .contskew .titulonosotros, .tituloservicios, .tituloclientes, .titulotrabajos, .titulocontactanos{
         top: 20px;
     }
 
-    .titulonosotros img , .tituloservicios img, .tituloclientes img, .titulotrabajos img{
+    .titulonosotros img , .tituloservicios img, .tituloclientes img, .titulotrabajos img, .titulocontactanos img{
         width: 50px;
     }
     
-    .titulonosotros h2 , .tituloservicios h2, .tituloclientes h2, .titulotrabajos h2{
+    .titulonosotros h2 , .tituloservicios h2, .tituloclientes h2, .titulotrabajos h2, .titulocontactanos h2{
         font-size: 25px;
     }
 
@@ -541,6 +684,12 @@ header.black{
     .zonaservicios{
         padding: 20px 0px;
     }
+
+    /***ZONA CONACTANOS**/
+
+    .formularioyubicanos{
+        flex-wrap: wrap;
+    }
 }
 
 @media screen and (max-width: 900px){
@@ -557,7 +706,6 @@ header.black{
     .imagennosotros img{
         display: none;
     }
-
 }
 
 @media screen and (max-width: 650px){
@@ -574,11 +722,11 @@ header.black{
 
     /***** ZONA NOSOTROS *****/
 
-    .titulonosotros img , .tituloservicios img, .tituloclientes img, .titulotrabajos img{
+    .titulonosotros img , .tituloservicios img, .tituloclientes img, .titulotrabajos img, .titulocontactanos img{
         width: 40px;
     }
     
-    .titulonosotros h2 , .tituloservicios h2, .tituloclientes h2, .titulotrabajos h2{
+    .titulonosotros h2 , .tituloservicios h2, .tituloclientes h2, .titulotrabajos h2, .titulocontactanos h2{
         font-size: 20px;
     }
 
@@ -600,6 +748,10 @@ header.black{
         margin-top: 10px;
     }
 
-    /****** ZONA SERVICIOS *******/
+    /****** ZONA CONTACTANOS *******/
+
+    .caja50, .caja100{
+        width: 100%;
+    }
     
 }
