@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
     <script src="js/jquery.js"></script>
     <script src="js/codigoscript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
     <script>
         $(window).on('scroll',function(){
             if ($(window).scrollTop()) {
@@ -44,7 +45,8 @@
     </header>
 
     <div class="fondo">
-        <h1>LA TECNOLOGIA AL ALCANCE<br>DE TUS MANOS</h1>
+        <h1 class="efectobaffle">LA TECNOLOGIA AL ALCANCE</h1>
+        <h1 class="efectobaffle">DE TUS MANOS</h1>
         <a href="#">Contactanos</a>       
     </div>
     
@@ -322,6 +324,16 @@
                         
                         });
    
-        </script>
+    </script>
+
+    <script type="text/javascript">
+        const text = baffle('.efectobaffle');
+        text.set({
+            characters : '▓/░ <░█░/ ▒/>░▒ ▒/▒ █>░<▒ ▒▓░░ ▓<▒ ▒▓█▒ ▓░█▓',
+            speed: 100
+        });
+        text.start();
+        text.reveal(3000);
+    </script>
 </body>
 </html>

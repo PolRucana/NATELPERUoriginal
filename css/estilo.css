@@ -140,6 +140,8 @@ header.black{
     color: white;
     margin-left: 40px;
     z-index: 1;
+
+    margin-bottom: 5px;
     /*background: rgba(90, 167, 232, 0.2);*/
     /*border-radius: 5px;*/
     /*padding: 9px 0px 0px 35px;*/
