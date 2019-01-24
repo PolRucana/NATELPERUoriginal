@@ -11,7 +11,6 @@
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
     <script src="js/jquery.js"></script>
     <script src="js/codigoscript.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
     <script>
         $(window).on('scroll',function(){
             if ($(window).scrollTop()) {
@@ -32,11 +31,11 @@
         </div>
         <nav>
             <ul>
-                <li><a href="">Nosotros</a></li>
-                <li><a href="">Servicios</a></li>
-                <li><a href="">Clientes</a></li>
-                <li><a href="">Trabajos</a></li>
-                <li><a href="">Contactanos</a></li>
+                <li><a href="#seccionnosotros">Nosotros</a></li>
+                <li><a href="#seccionservicios">Servicios</a></li>
+                <li><a href="#seccionclientes">Clientes</a></li>
+                <li><a href="#secciontrabajos">Trabajos</a></li>
+                <li><a href="#seccioncontactanos">Contactanos</a></li>
             </ul>
         </nav>
         <div class="menu">
@@ -45,12 +44,13 @@
     </header>
 
     <div class="fondo">
-        <h1 class="efectobaffle">LA TECNOLOGIA AL ALCANCE</h1>
-        <h1 class="efectobaffle">DE TUS MANOS</h1>
+        <h1>LA TECNOLOGIA AL ALCANCE</h1>
+        <h1>DE TUS MANOS</h1>
         <a href="#">Contactanos</a>       
     </div>
     
     <section class="nosotros">
+        <a href="" name="seccionnosotros" class="espacionosotros"></a>
         <div class="contskew">
             <div class="skew"></div>
             <div class="titulonosotros"><img src="png/001-fun.png" alt=""><h2>Nosotros</h2></div>
@@ -88,6 +88,7 @@
     </section>
 
     <section class="servicios">
+        <a href="" name="seccionservicios" class="espacioservicios"></a>
         <div class="contskew">
             <div class="skew"></div>
             <div class="tituloservicios"><img src="png/003-gear.png" alt=""><h2>Servicios</h2></div>
@@ -152,6 +153,7 @@
     </section>
 
     <section class="clientes">
+        <a href="" name="seccionclientes" class="espacioclientes"></a>
         <div class="contskew">
             <div class="skew"></div>
             <div class="tituloclientes"><img src="png/004-rate.png" alt=""><h2>Clientes</h2></div>
@@ -173,6 +175,7 @@
     </section>
 
     <section class="trabajos">
+        <a href="" name="secciontrabajos" class="espaciotrabajos"></a>
         <div class="contskew">
             <div class="skew"></div>
             <div class="titulotrabajos"><img src="png/005-effort.png" alt=""><h2>Trabajos</h2></div>
@@ -193,6 +196,7 @@
     </section>
 
     <section class="contactanos">
+        <a href="" name="seccioncontactanos" class="espaciocontactanos"></a>
         <div class="contskew">
             <div class="skew"></div>
             <div class="titulocontactanos"><img src="png/006-phone-book.png" alt=""><h2>Contactanos</h2></div>
@@ -326,14 +330,5 @@
    
     </script>
 
-    <script type="text/javascript">
-        const text = baffle('.efectobaffle');
-        text.set({
-            characters : '▓/░ <░█░/ ▒/>░▒ ▒/▒ █>░<▒ ▒▓░░ ▓<▒ ▒▓█▒ ▓░█▓',
-            speed: 100
-        });
-        text.start();
-        text.reveal(3000);
-    </script>
 </body>
 </html>

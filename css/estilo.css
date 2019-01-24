@@ -172,6 +172,10 @@ header.black{
 
 /***  ZONA NOSOTROS ****/
 
+.nosotros{
+    position: relative;
+}
+
 .contskew{
     /*border: 1px solid red;*/
     position: relative;
@@ -319,6 +323,7 @@ header.black{
 /***** ZONA DE SERVICIOS *******/
 .servicios{
     margin-top: 100px;
+    position: relative;
 }
 
 .zonaservicios{
@@ -392,6 +397,10 @@ header.black{
 
 /******** ZONA CLIENTES ************/
 
+.clientes{
+    position: relative;
+}
+
 .sliderclientes{
     /*border: 1px solid red;*/
     width: 90%;
@@ -424,6 +433,7 @@ header.black{
 
 .trabajos{
     margin-top: 60px;
+    position: relative;
 }
 
 .slidertrabajos{
@@ -459,6 +469,7 @@ header.black{
 
 .contactanos{
     margin-top: 100px;
+    position: relative;
 }
 
 .formularioyubicanos{
@@ -645,6 +656,16 @@ form button{
 
 .chat-content iframe{
     display: block;
+}
+
+/**** ZONA ESPACIOS PARA DESPLAZAR CADA ZONA DEL MENU *****/
+.espacionosotros, .espacioservicios, .espacioclientes, .espaciotrabajos, .espaciocontactanos{
+    /*border: 1px solid red;*/
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 64.13px;
+    top: -64.13px;
 }
 
 /**ESTE ES EL LADO RESPONSIVE***/
